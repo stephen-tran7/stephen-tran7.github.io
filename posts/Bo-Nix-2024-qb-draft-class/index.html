@@ -364,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Bo Nix is one of the most polarizing players in the NFL.</p>
+<p>Bo Nix is one of the most polarizing players in the NFL.filler filler filler test</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -381,6 +381,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>nix <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"bo_nix.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+Rows: 3 Columns: 34
+── Column specification
+──────────────────────────────────────────────────────── Delimiter: "," chr
+(5): Team, Lg, Pos, QBrec, Awards dbl (29): Season, Age, G, GS, Cmp, Att, Cmp%,
+Yds...12, TD, TD%, Int, Int%, ...
+ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+Specify the column types or set `show_col_types = FALSE` to quiet this message.
+• `Yds` -&gt; `Yds...12`
+• `Yds` -&gt; `Yds...27`</code></pre>
 </div>
 </div>
 
